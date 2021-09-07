@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container py-5">
       <h1> TEST </h1>
     </div>
   );
