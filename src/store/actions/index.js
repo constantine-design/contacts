@@ -15,8 +15,6 @@ export const fetchContacts = () => {
 export const newContact = (contact) => {
   return (dispatch) => {
     api.post("", contact)
-      .then(response => dispatch(
-        createContact(response.data)
-      ))
+      .then(response => dispatch({type: NEW_CONTACT, contact}));
   }
 }

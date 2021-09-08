@@ -10,7 +10,7 @@ const reducer = (state = initialState, {type, payload}) => {
     case(SET_CONTACTS):
       return { ...state, contacts: payload };
     case(NEW_CONTACT):
-      return { ...state, contacts: payload };
+      return { ...state  };
     default:
       return state;
   }
