@@ -1,4 +1,4 @@
-export const TEST = "TEST";
+export const SET_CONTACTS = "SET_CONTACTS";
 
 const initialState = {
   contacts: []
@@ -6,8 +6,8 @@ const initialState = {
 
 const reducer = (state = initialState, {type, payload}) => {
   switch(type) {
-    case(TEST):
-      return [];
+    case(SET_CONTACTS):
+      return { ...state, contacts: payload };
     default:
       return state;
   }

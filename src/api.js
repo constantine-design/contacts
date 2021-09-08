@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export default axios.create({
-  baseUrl: "http://localhost:5000/todos",
-  headers: { "Content-Type": "application/json" }
+    baseURL: "http://localhost:5000/contacts",
+    headers: { "Content-Type": "application/json" }
 });
