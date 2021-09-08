@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import { fetchContacts } from './store/actions';
+import { fetchContacts, newContact } from './store/actions';
 import { connect } from 'react-redux';
 import Table from './components/Table.js'
 
@@ -16,6 +16,7 @@ function App(props) {
       <h1 className="text-center"> TEST </h1>
       <Table
         contacts={props.contacts}
+        newContact={props.newContact}
       />
     </div>
   );
@@ -25,5 +26,5 @@ export default connect(
   (state) => ({
     contacts: state.contacts,
   }),
-  { fetchContacts }
+  { fetchContacts, newContact }
 )(App);

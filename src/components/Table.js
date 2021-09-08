@@ -34,6 +34,7 @@ export default function Table(props) {
       <div className="text-right">
         <button
           className="btn btn-sm btn-outline-secondary"
+          onClick={props.newContact}
         >
           Add 🞡
         </button>
