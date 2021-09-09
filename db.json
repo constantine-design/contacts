@@ -7,12 +7,6 @@
       "email": "tommy22@gmail.com"
     },
     {
-      "id": 2,
-      "name": "Priscilla Casey",
-      "phone": "0973445543",
-      "email": "charmind343@gmail.com"
-    },
-    {
       "id": 3,
       "name": "Tony Long",
       "phone": "0995435511",
@@ -41,24 +35,6 @@
       "name": "Marlon Palmer",
       "phone": "0664689034",
       "email": "tmarlon4442@gmail.com"
-    },
-    {
-      "id": 8,
-      "name": "Tommie Mitchell",
-      "phone": "0447455451",
-      "email": "mitchel.t.234@gmail.com"
-    },
-    {
-      "name": "sdfwe",
-      "phone": "sdfsdf",
-      "email": "sdfsfsdf",
-      "id": 9
-    },
-    {
-      "name": "rewerwer",
-      "phone": "werwer",
-      "email": "werwerwer",
-      "id": 10
     }
   ]
 }
