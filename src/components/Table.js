@@ -1,4 +1,5 @@
 import React from 'react';
+import SimpleButton from './SimpleButton.js'
 
 export default function Table(props) {
   return (
@@ -20,14 +21,12 @@ export default function Table(props) {
                 <td>{contact.phone}</td>
                 <td>{contact.email}</td>
                 <td>
+                  <SimpleButton
+                    name="Edit"
+                    onClick={()=>props.writeForm(contact)}
+                  />
                   <button
-                    className="btn btn-sm btn-outline-secondary"
-                    onClick={()=>props.updateContact({...contact, "name": "Y"})}
-                  >
-                    ✎
-                  </button>
-                  <button
-                    className="btn btn-sm btn-outline-danger"
+                    className="btn btn-sm btn-outline-danger ms-2"
                     onClick={()=>props.deleteContact(contact.id)}
                   >
                     🗙
@@ -38,13 +37,11 @@ export default function Table(props) {
           </tbody>
         </table>
       </div>
-      <div className="text-right">
-        <button
-          className="btn btn-sm btn-outline-secondary"
-          onClick={()=>props.newContact({"name":"X","phone":"345345","email":"mail"})}
-        >
-          Add 🞡
-        </button>
+      <div className="text-end">
+        <SimpleButton
+          name="Add 🞡"
+          onClick={()=>props.writeForm({"name":"","phone":"","email":""})}
+        />
       </div>
     </>
   )
