@@ -14,16 +14,23 @@ export default function Table(props) {
             </tr>
           </thead>
           <tbody>
-            { props.contacts.map(contacts=>
-              <tr key={contacts.id}>
-                <td>{contacts.name}</td>
-                <td>{contacts.phone}</td>
-                <td>{contacts.email}</td>
+            { props.contacts.map(contact=>
+              <tr key={contact.id}>
+                <td>{contact.name}</td>
+                <td>{contact.phone}</td>
+                <td>{contact.email}</td>
                 <td>
                   <button
                     className="btn btn-sm btn-outline-secondary"
+                    onClick={()=>props.updateContact({...contact, "name": "Y"})}
                   >
                     ✎
+                  </button>
+                  <button
+                    className="btn btn-sm btn-outline-danger"
+                    onClick={()=>props.deleteContact(contact.id)}
+                  >
+                    🗙
                   </button>
                 </td>
               </tr>
