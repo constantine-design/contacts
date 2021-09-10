@@ -14,13 +14,13 @@ export default function App(props) {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" activeClassName="active" to="/">Home</Link>
+                  <Link className="nav-link" to="/">Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link  className="nav-link" activeClassName="active" to="/about">About</Link>
+                  <Link className="nav-link" to="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" activeClassName="active" to="/contacts">Contacts</Link>
+                  <Link className="nav-link" to="/contacts">Contacts</Link>
                 </li>
               </ul>
             </div>
