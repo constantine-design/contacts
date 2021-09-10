@@ -22,6 +22,7 @@ export default function Table(props) {
                 contact={contact}
                 deleteContact={props.deleteContact}
                 writeForm={props.writeForm}
+                cleanForm={props.cleanForm}
               />
             )}
           </tbody>

@@ -21,6 +21,7 @@ function Contacts(props) {
             deleteContact={props.deleteContact}
             updateContact={props.updateContact}
             writeForm={props.writeForm}
+            cleanForm={props.cleanForm}
           />
         </div>
         <div className="col-sm-8 col-lg-4 mb-3">

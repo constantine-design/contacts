@@ -15,7 +15,10 @@ export default function TableRow(props) {
         <SimpleButton
           isRed
           name="🗙"
-          onClick={()=>props.deleteContact(props.contact.id)}
+          onClick={()=> {
+            props.deleteContact(props.contact.id);
+            props.cleanForm();
+          }}
         />
       </td>
     </tr>
