@@ -11,7 +11,7 @@ function Contacts(props) {
   }, []);
 
   return (
-    <div className="App container py-5">
+    <div className="App container mb-3">
       <h1 className="text-center text-secondary display-1 mb-5"> Contacts </h1>
       <div className="row">
         <div className="col-lg-8">
