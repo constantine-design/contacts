@@ -1,1 +1,3 @@
-
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    opacity: .2!important;
+}

@@ -29,7 +29,7 @@ export default function Table(props) {
       </div>
       <div className="text-end">
         <SimpleButton
-          name="Add 🞡"
+          name="Add New 🞡"
           onClick={()=>props.writeForm({"name":"","phone":"","email":""})}
         />
       </div>

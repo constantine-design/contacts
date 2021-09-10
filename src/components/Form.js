@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FormInput from './FormInput.js';
 import SimpleButton from './SimpleButton.js'
 
@@ -18,12 +18,15 @@ export default function Form(props) {
   function emailValidation(mail) {
     return !(/(.+)@(.+){2,}\.(.+){2,}/.test(mail));
   }
-  var a = [
+  let a = [
     nameValidation(props.form.name),
     phoneValidation(props.form.phone),
     emailValidation(props.form.email)
-  ]
-  console.log(a);console.log(a.every(a=>a===false));
+  ].every(a=>!a)
+  const [isFormValid,setIsFormValid] = useState();
+  useEffect(() => {
+    setIsFormValid(a);
+  });
   return (
     <div className="bg-light rounded p-4 border">
       <h2 className="text-secondary mt-3">{props.form.id?"Edit":"Create"} Item</h2>
@@ -55,7 +58,7 @@ export default function Form(props) {
         <div className="text-end my-4">
           <SimpleButton
             isRed
-            checkDisabled={a}
+            checkDisabled={!isFormValid}
             name={props.form.id?"Save":"Create"}
             onClick={smartSave}
           />
