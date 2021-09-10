@@ -35,6 +35,12 @@
       "name": "Marlon Palmer",
       "phone": "0664689034",
       "email": "tmarlon4442@gmail.com"
+    },
+    {
+      "name": "John Smith",
+      "phone": "0487772233",
+      "email": "smith.j@meta.ua",
+      "id": 8
     }
   ]
 }

@@ -13,8 +13,8 @@ function Contacts(props) {
   return (
     <div className="App container mb-3">
       <h1 className="text-center text-secondary display-1 mb-5"> Contacts </h1>
-      <div className="row">
-        <div className="col-lg-8">
+      <div className="row justify-content-center">
+        <div className="col-lg-8 mb-3">
           <Table
             contacts={props.contacts}
             newContact={props.newContact}
@@ -23,7 +23,7 @@ function Contacts(props) {
             writeForm={props.writeForm}
           />
         </div>
-        <div className="col-sm-8 col-lg-4">
+        <div className="col-sm-8 col-lg-4 mb-3">
           { Object.keys(props.form).length>0 &&
             <Form
               form={props.form}

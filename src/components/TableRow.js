@@ -7,7 +7,7 @@ export default function TableRow(props) {
       <td>{props.contact.name}</td>
       <td>{props.contact.phone}</td>
       <td>{props.contact.email}</td>
-      <td style={{width: "8rem",textAlign: "center"}}>
+      <td className="py-1" style={{width: "8rem",textAlign: "center"}}>
         <SimpleButton
           name="Edit"
           onClick={()=>props.writeForm(props.contact)}
